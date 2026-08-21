@@ -1,0 +1,30 @@
+// Curated, not exhaustive. "hard" = full paywall, nothing readable without an
+// account. "metered" = a handful of free articles before it blocks you.
+// "soft" = mostly readable, occasional gated pieces.
+const PAYWALLED_DOMAINS = [
+  { domain: 'nytimes.com', type: 'metered' },
+  { domain: 'wsj.com', type: 'hard' },
+  { domain: 'ft.com', type: 'hard' },
+  { domain: 'bloomberg.com', type: 'metered' },
+  { domain: 'washingtonpost.com', type: 'metered' },
+  { domain: 'theathletic.com', type: 'hard' },
+  { domain: 'newyorker.com', type: 'metered' },
+  { domain: 'wired.com', type: 'metered' },
+  { domain: 'economist.com', type: 'hard' },
+  { domain: 'businessinsider.com', type: 'metered' },
+  { domain: 'latimes.com', type: 'metered' },
+  { domain: 'bostonglobe.com', type: 'metered' },
+  { domain: 'thetimes.co.uk', type: 'hard' },
+  { domain: 'telegraph.co.uk', type: 'metered' },
+  { domain: 'theinformation.com', type: 'hard' },
+  { domain: 'barrons.com', type: 'hard' },
+  { domain: 'forbes.com', type: 'soft' },
+  { domain: 'technologyreview.com', type: 'metered' },
+  { domain: 'hbr.org', type: 'metered' },
+  { domain: 'theatlantic.com', type: 'metered' },
+  { domain: 'newscientist.com', type: 'metered' },
+  { domain: 'medium.com', type: 'soft' },
+  { domain: 'seekingalpha.com', type: 'hard' },
+  { domain: 'consumerreports.org', type: 'hard' },
+  { domain: 'motortrend.com', type: 'soft' },
+];

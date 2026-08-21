@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Paywall Filter — Settings</title>
+<style>
+  body {
+    font-family: -apple-system, Segoe UI, Roboto, sans-serif;
+    max-width: 480px;
+    margin: 32px auto;
+    color: #222;
+  }
+  h1 { font-size: 18px; }
+  p.sub { color: #666; font-size: 13px; }
+  form { display: flex; gap: 8px; margin: 16px 0; }
+  input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #2c7be5;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  ul { list-style: none; padding: 0; }
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 6px;
+  }
+  li button {
+    background: none;
+    color: #c0392b;
+    font-weight: normal;
+    padding: 2px 8px;
+  }
+  .empty { color: #999; font-size: 13px; }
+</style>
+</head>
+<body>
+  <h1>Sites you already subscribe to</h1>
+  <p class="sub">These stay unbadged in search results. Everything else known to be paywalled gets flagged.</p>
+  <form id="addForm">
+    <input id="domainInput" type="text" placeholder="e.g. nytimes.com" />
+    <button type="submit">Add</button>
+  </form>
+  <ul id="list"></ul>
+<script src="options.js"></script>
+</body>
+</html>

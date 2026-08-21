@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Paywall Filter",
+  "version": "1.0.0",
+  "description": "Badges paywalled search results, except sites you already subscribe to. No paywall bypassing -- just honest filtering.",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": [
+    "*://www.google.com/search*",
+    "*://www.bing.com/search*",
+    "*://duckduckgo.com/*",
+    "*://kagi.com/search*",
+    "*://search.brave.com/search*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.google.com/search*",
+        "*://www.bing.com/search*",
+        "*://duckduckgo.com/*",
+        "*://kagi.com/search*",
+        "*://search.brave.com/search*"
+      ],
+      "js": ["paywalled-domains.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}
