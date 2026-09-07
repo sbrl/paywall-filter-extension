@@ -27,4 +27,7 @@ const PAYWALLED_DOMAINS = [
   { domain: 'seekingalpha.com', type: 'hard' },
   { domain: 'consumerreports.org', type: 'hard' },
   { domain: 'motortrend.com', type: 'soft' },
+  { domain: 'ieeexplore.ieee.org', type: 'hard' },
+  { domain: 'musicnotes.com', type: 'hard' },
+  { domain: 'pianotify.com', type: 'soft' }
 ];
